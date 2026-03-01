@@ -16,7 +16,7 @@
 <p align="center">A dark theme suite for <a href="https://kde.org/pt-br/plasma-desktop">KDE Plasma 6</a>, based on <a href="https://github.com/vinceliuice/MacTahoe-kde">MacTahoe KDE</a> and recolored to match <a href="https://github.com/KDE/breeze">Breeze Dark's palette</a>.</p>
 
 
-## Table of Contents
+# Table of Contents
 
 - [What's Changed](#whats-changed)
 - [Components](#components)
@@ -30,8 +30,9 @@
 - [Project Structure](#project-structure)
 - [Credits](#credits)
 - [License](#license)
+- [Support](#support)
 
-## What's Changed
+# What's Changed
 
 This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice/MacTahoe-kde) and applies the following modifications:
 
@@ -44,7 +45,7 @@ This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice
 - **Look-and-feel defaults** — corrected icons (WhiteSur), cursors, and sound theme references
 - **Widget configuration icons** — replaced with Breeze defaults for consistent close/config buttons
 
-## Components
+# Components
 
 | Component          | Name                              |
 |--------------------|-----------------------------------|
@@ -60,9 +61,9 @@ This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice
 | GTK Style          | MacTahoe-Dark-Darker              |
 | Kvantum Style      | ddcMacTahoeKdeDark                |
 
-## Installation
+# Installation
 
-### Dependencies
+## Dependencies
 
 - `kvantum` — Qt style engine
 - `sassc` — SCSS compiler (for GTK theme build)
@@ -83,7 +84,7 @@ On Arch:
 sudo pacman -S --noconfirm kvantum sassc git
 ```
 
-### Install
+## Install
 
 ```bash
 # Install everything and apply the theme
@@ -96,7 +97,7 @@ sudo pacman -S --noconfirm kvantum sassc git
 ./install.sh --no-apply
 ```
 
-### Uninstall
+## Uninstall
 
 ```bash
 # Remove everything and restore Breeze defaults
@@ -106,7 +107,7 @@ sudo pacman -S --noconfirm kvantum sassc git
 ./uninstall.sh --keep-icons --keep-gtk
 ```
 
-## What the Installer Does
+# What the Installer Does
 
 1. Copies Plasma desktop theme, look-and-feel package, Aurorae window decorations, color scheme, and Kvantum theme to their proper locations
 2. Copies the MacOS system sounds theme
@@ -117,9 +118,9 @@ sudo pacman -S --noconfirm kvantum sassc git
 7. Applies the dark theme
 8. Clears the Plasma SVG cache
 
-## Extras
+# Extras
 
-### Thunderbird / Betterbird Dark Theme
+## Thunderbird / Betterbird Dark Theme
 
 A `userChrome.css` is included for dark-themed Thunderbird/Betterbird:
 
@@ -127,7 +128,7 @@ A `userChrome.css` is included for dark-themed Thunderbird/Betterbird:
 2. Copy `extras/user.js` to your profile root folder
 3. Restart Thunderbird/Betterbird
 
-## Project Structure
+# Project Structure
 
 ```
 ddcMacTahoeKde/
@@ -145,7 +146,7 @@ ddcMacTahoeKde/
 └── extras/                    # Thunderbird/Betterbird theme
 ```
 
-## Credits
+# Credits
 
 This project is a color-corrected fork of themes by [vinceliuice](https://github.com/vinceliuice):
 
@@ -155,6 +156,15 @@ This project is a color-corrected fork of themes by [vinceliuice](https://github
 - [WhiteSur-icon-theme](https://github.com/vinceliuice/WhiteSur-icon-theme) — Icon theme (with close icons patched to Breeze X)
 - MacOS Sounds — System sound theme (Apple macOS sound effects)
 
-## License
+
+# License
 
 GPLv3, same as the original MacTahoe themes.
+
+
+# Support
+If you find this project helpful, consider supporting development:
+
+- [GitHub Sponsor](https://github.com/sponsors/ddc)
+- [ko-fi](https://ko-fi.com/ddcsta)
+- [PayPal](https://www.paypal.com/ncp/payment/6G9Z78QHUD4RJ)
