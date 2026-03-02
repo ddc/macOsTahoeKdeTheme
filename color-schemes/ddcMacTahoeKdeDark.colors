@@ -130,8 +130,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=120,120,120
 
 [General]
-ColorScheme=ddcMacTahoeKdeDark
-Name=ddcMacTahoeKdeDark
+ColorScheme=DDCmacOsTahoeKdeThemeDark
+Name=DDCmacOsTahoeKdeThemeDark
 shadeSortColumn=true
 
 [KDE]

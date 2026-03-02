@@ -13,11 +13,11 @@
         ],
         "EnabledByDefault": true,
         "Description": "MacOS Tahoe dark theme for KDE Plasma",
-        "Id": "com.github.ddc.ddcMacTahoeKde-Dark",
+        "Id": "com.github.ddc.DDCmacOsTahoeKdeTheme-Dark",
         "License": "GPL-3.0",
-        "Name": "ddcMacTahoeKde-Dark",
-        "Version": "1.0.0",
-        "Website": "https://github.com/ddc/ddcMacTahoeKde"
+        "Name": "DDCmacOsTahoeKdeTheme-Dark",
+        "Version": "1.0.1",
+        "Website": "https://github.com/ddc/macOsTahoeKdeTheme"
     },
     "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
     "X-KDE-fallbackPackage": "org.kde.breeze.desktop",

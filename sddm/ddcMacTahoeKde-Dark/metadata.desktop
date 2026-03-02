@@ -1,17 +1,17 @@
 [SddmGreeterTheme]
-Name=ddcMacTahoeKde-Dark
+Name=DDCmacOsTahoeKdeTheme-Dark
 Description=MacOS Tahoe sddm theme for KDE Plasma
 Author=Daniel Costa
 Copyright=(c) 2026, DDC Softwares
 License=GPL-3.0
 Type=sddm-theme
-Version=1.0.0
-Website=https://github.com/ddc/ddcMacTahoeKde
+Version=1.0.1
+Website=https://github.com/ddc/macOsTahoeKdeTheme
 Screenshot=Preview.jpeg
 MainScript=Main.qml
 ConfigFile=theme.conf
 TranslationsDirectory=translations
 Email=daniel@ddcsoftwares.com
-Theme-Id=ddcMacTahoeKde-Dark
+Theme-Id=DDCmacOsTahoeKdeTheme-Dark
 Theme-API=2.0
 QtVersion=6

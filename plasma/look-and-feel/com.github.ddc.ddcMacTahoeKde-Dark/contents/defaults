@@ -3,13 +3,13 @@ cursorTheme=MacTahoe
 cursorSize=32
 
 [kdeglobals][General]
-ColorScheme=ddcMacTahoeKdeDark
+ColorScheme=DDCmacOsTahoeKdeThemeDark
 
 [kdeglobals][Icons]
 Theme=WhiteSur-dark
 
 [kdeglobals][KDE]
-LookAndFeelPackage=com.github.ddc.ddcMacTahoeKde-Dark
+LookAndFeelPackage=com.github.ddc.DDCmacOsTahoeKdeTheme-Dark
 
 [kdeglobals][KDE]
 widgetStyle=kvantum-dark
@@ -25,10 +25,10 @@ BorderSize=Tiny
 ButtonsOnLeft=XAI
 ButtonsOnRight=
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__ddcMacTahoeKde-Dark
+theme=__aurorae__svg__DDCmacOsTahoeKdeTheme-Dark
 
 [kdeglobals][Sounds]
 Theme=MacOS Sounds
 
 [plasmarc][Theme]
-name=ddcMacTahoeKde-Dark
+name=DDCmacOsTahoeKdeTheme-Dark

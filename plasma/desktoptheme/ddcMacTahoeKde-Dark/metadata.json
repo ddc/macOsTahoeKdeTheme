@@ -7,13 +7,13 @@
             }
         ],
         "Category": "Plasma 6.0 theme",
-        "Description": "ddcMacTahoeKde dark theme for KDE Plasma",
+        "Description": "DDCmacOsTahoeKdeTheme dark theme for KDE Plasma",
         "EnabledByDefault": true,
-        "Id": "ddcMacTahoeKde-Dark",
+        "Id": "DDCmacOsTahoeKdeTheme-Dark",
         "License": "GPL-3.0",
-        "Name": "ddcMacTahoeKde-Dark",
-        "Version": "1.0.0",
-        "Website": "https://github.com/ddc/ddcMacTahoeKde"
+        "Name": "DDCmacOsTahoeKdeTheme-Dark",
+        "Version": "1.0.1",
+        "Website": "https://github.com/ddc/macOsTahoeKdeTheme"
     },
     "X-Plasma-API": "5.0"
 }

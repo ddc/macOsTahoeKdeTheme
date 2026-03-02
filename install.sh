@@ -1,6 +1,6 @@
 #!/bin/bash
-# ddcMacTahoeKde Theme Installer
-# Installs the ddcMacTahoeKde dark theme suite with Breeze Dark-aligned colors.
+# DDCmacOsTahoeKdeTheme Theme Installer
+# Installs the DDCmacOsTahoeKdeTheme dark theme suite with Breeze Dark-aligned colors.
 #
 # Usage: ./install.sh [OPTIONS]
 #
@@ -94,9 +94,9 @@ ok "Dependencies satisfied"
 PLASMA_THEME_DIR="$HOME/.local/share/plasma/desktoptheme"
 mkdir -p "$PLASMA_THEME_DIR"
 
-info "Installing Plasma desktop theme: ddcMacTahoeKde-Dark..."
-cp -a "$SCRIPT_DIR/plasma/desktoptheme/ddcMacTahoeKde-Dark" "$PLASMA_THEME_DIR/"
-ok "ddcMacTahoeKde-Dark desktop theme installed"
+info "Installing Plasma desktop theme: DDCmacOsTahoeKdeTheme-Dark..."
+cp -a "$SCRIPT_DIR/plasma/desktoptheme/DDCmacOsTahoeKdeTheme-Dark" "$PLASMA_THEME_DIR/"
+ok "DDCmacOsTahoeKdeTheme-Dark desktop theme installed"
 
 # -------------------------------------------------------------------
 # Step 3: Copy look-and-feel package
@@ -104,9 +104,9 @@ ok "ddcMacTahoeKde-Dark desktop theme installed"
 LAF_DIR="$HOME/.local/share/plasma/look-and-feel"
 mkdir -p "$LAF_DIR"
 
-info "Installing look-and-feel: ddcMacTahoeKde-Dark..."
-cp -a "$SCRIPT_DIR/plasma/look-and-feel/com.github.ddc.ddcMacTahoeKde-Dark" "$LAF_DIR/"
-ok "ddcMacTahoeKde-Dark look-and-feel installed"
+info "Installing look-and-feel: DDCmacOsTahoeKdeTheme-Dark..."
+cp -a "$SCRIPT_DIR/plasma/look-and-feel/com.github.ddc.DDCmacOsTahoeKdeTheme-Dark" "$LAF_DIR/"
+ok "DDCmacOsTahoeKdeTheme-Dark look-and-feel installed"
 
 # -------------------------------------------------------------------
 # Step 4: Copy Aurorae window decorations
@@ -114,11 +114,11 @@ ok "ddcMacTahoeKde-Dark look-and-feel installed"
 AURORAE_DIR="$HOME/.local/share/aurorae/themes"
 mkdir -p "$AURORAE_DIR"
 
-info "Installing Aurorae decorations: ddcMacTahoeKde-Dark..."
-cp -a "$SCRIPT_DIR/aurorae/themes/ddcMacTahoeKde-Dark" "$AURORAE_DIR/"
-cp -a "$SCRIPT_DIR/aurorae/themes/ddcMacTahoeKde-Dark-1.25x" "$AURORAE_DIR/"
-cp -a "$SCRIPT_DIR/aurorae/themes/ddcMacTahoeKde-Dark-1.5x" "$AURORAE_DIR/"
-ok "ddcMacTahoeKde-Dark Aurorae decorations installed"
+info "Installing Aurorae decorations: DDCmacOsTahoeKdeTheme-Dark..."
+cp -a "$SCRIPT_DIR/aurorae/themes/DDCmacOsTahoeKdeTheme-Dark" "$AURORAE_DIR/"
+cp -a "$SCRIPT_DIR/aurorae/themes/DDCmacOsTahoeKdeTheme-Dark-1.25x" "$AURORAE_DIR/"
+cp -a "$SCRIPT_DIR/aurorae/themes/DDCmacOsTahoeKdeTheme-Dark-1.5x" "$AURORAE_DIR/"
+ok "DDCmacOsTahoeKdeTheme-Dark Aurorae decorations installed"
 
 # -------------------------------------------------------------------
 # Step 5: Copy color scheme
@@ -126,18 +126,18 @@ ok "ddcMacTahoeKde-Dark Aurorae decorations installed"
 COLOR_DIR="$HOME/.local/share/color-schemes"
 mkdir -p "$COLOR_DIR"
 
-info "Installing color scheme: ddcMacTahoeKdeDark..."
-cp -a "$SCRIPT_DIR/color-schemes/ddcMacTahoeKdeDark.colors" "$COLOR_DIR/"
-ok "ddcMacTahoeKdeDark color scheme installed"
+info "Installing color scheme: DDCmacOsTahoeKdeThemeDark..."
+cp -a "$SCRIPT_DIR/color-schemes/DDCmacOsTahoeKdeThemeDark.colors" "$COLOR_DIR/"
+ok "DDCmacOsTahoeKdeThemeDark color scheme installed"
 
 # -------------------------------------------------------------------
 # Step 6: Copy Kvantum theme
 # -------------------------------------------------------------------
-KVANTUM_DIR="$HOME/.config/Kvantum/ddcMacTahoeKde"
+KVANTUM_DIR="$HOME/.config/Kvantum/DDCmacOsTahoeKdeTheme"
 mkdir -p "$KVANTUM_DIR"
 
-info "Installing Kvantum theme: ddcMacTahoeKde..."
-cp -a "$SCRIPT_DIR/kvantum/ddcMacTahoeKde/"* "$KVANTUM_DIR/"
+info "Installing Kvantum theme: DDCmacOsTahoeKdeTheme..."
+cp -a "$SCRIPT_DIR/kvantum/DDCmacOsTahoeKdeTheme/"* "$KVANTUM_DIR/"
 ok "Kvantum theme installed"
 
 # -------------------------------------------------------------------
@@ -266,8 +266,8 @@ fi
 # Step 11: Install SDDM theme (requires sudo)
 # -------------------------------------------------------------------
 if $INSTALL_SDDM; then
-    info "Installing SDDM theme: ddcMacTahoeKde-Dark (requires sudo)..."
-    sudo cp -a "$SCRIPT_DIR/sddm/ddcMacTahoeKde-Dark" /usr/share/sddm/themes/
+    info "Installing SDDM theme: DDCmacOsTahoeKdeTheme-Dark (requires sudo)..."
+    sudo cp -a "$SCRIPT_DIR/sddm/DDCmacOsTahoeKdeTheme-Dark" /usr/share/sddm/themes/
     ok "SDDM theme installed"
 else
     warn "Skipping SDDM theme installation (--no-sddm)"
@@ -278,13 +278,13 @@ fi
 # -------------------------------------------------------------------
 if $APPLY_THEME; then
     info "Applying dark theme..."
-    plasma-apply-colorscheme ddcMacTahoeKdeDark
-    plasma-apply-desktoptheme ddcMacTahoeKde-Dark
-    kvantummanager --set ddcMacTahoeKdeDark
+    plasma-apply-colorscheme DDCmacOsTahoeKdeThemeDark
+    plasma-apply-desktoptheme DDCmacOsTahoeKdeTheme-Dark
+    kvantummanager --set DDCmacOsTahoeKdeThemeDark
 
     # Set Aurorae decoration
     kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key library "org.kde.kwin.aurorae"
-    kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key theme "__aurorae__svg__ddcMacTahoeKde-Dark"
+    kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key theme "__aurorae__svg__DDCmacOsTahoeKdeTheme-Dark"
 
     # Set icons and cursor
     kwriteconfig6 --file kdeglobals --group Icons --key Theme "WhiteSur-dark"
@@ -317,7 +317,7 @@ ok "Cache cleared"
 # Done
 # -------------------------------------------------------------------
 echo ""
-ok "ddcMacTahoeKde v${VERSION} installation complete!"
+ok "DDCmacOsTahoeKdeTheme v${VERSION} installation complete!"
 echo ""
 echo "Notes:"
 echo "  - Log out and back in for all changes to take effect"

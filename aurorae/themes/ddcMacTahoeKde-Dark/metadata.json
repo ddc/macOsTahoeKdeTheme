@@ -12,12 +12,12 @@
             "aurorae"
         ],
         "EnabledByDefault": true,
-        "Name": "ddcMacTahoeKde-Dark",
-        "Description" : "ddcMacTahoeKde-Dark window decorations",
-        "Id": "ddcMacTahoeKde-Dark",
-        "Version": "1.0.0",
+        "Name": "DDCmacOsTahoeKdeTheme-Dark",
+        "Description" : "DDCmacOsTahoeKdeTheme-Dark window decorations",
+        "Id": "DDCmacOsTahoeKdeTheme-Dark",
+        "Version": "1.0.1",
         "License": "GPL-3.0",
-        "Website": "https://github.com/ddc/ddcMacTahoeKde",
+        "Website": "https://github.com/ddc/macOsTahoeKdeTheme",
         "X-KDE-PluginInfo-blur": false,
         "X-KPackage-Dependencies": [
         ]

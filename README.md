@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/ddc/ddcMacTahoeKde/refs/heads/master/assets/ddcTheme-icon.svg" alt="ddcTheme" width="150">
+  <img src="https://raw.githubusercontent.com/ddc/macOsTahoeKdeTheme/refs/heads/master/assets/ddcTheme-icon.svg" alt="ddcTheme" width="150">
   <br>
   DDC macOS Tahoe KDE Plasma 6 Theme
 </h1>
@@ -9,11 +9,11 @@
     <a href="https://github.com/sponsors/ddc"><img src="https://img.shields.io/static/v1?style=plastic&label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4" alt="Sponsor"/></a>
     <br>
     <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic&logo=gnu&logoColor=white" alt="License: GPLv3"/></a>
-    <a href="https://github.com/ddc/ddcMacTahoeKde/releases/latest"><img src="https://img.shields.io/github/v/release/ddc/ddcMacTahoeKde?style=plastic&logo=github&logoColor=white" alt="Release"/></a>
+    <a href="https://github.com/ddc/macOsTahoeKdeTheme/releases/latest"><img src="https://img.shields.io/github/v/release/ddc/macOsTahoeKdeTheme?style=plastic&logo=github&logoColor=white" alt="Release"/></a>
     <br>
-    <a href="https://github.com/ddc/ddcMacTahoeKde/issues"><img src="https://img.shields.io/github/issues/ddc/ddcMacTahoeKde?style=plastic&logo=github&logoColor=white" alt="issues"/></a>
-    <a href="https://github.com/ddc/ddcMacTahoeKde/actions/workflows/workflow.yml"><img src="https://img.shields.io/github/actions/workflow/status/ddc/ddcMacTahoeKde/workflow.yml?style=plastic&logo=github&logoColor=white&label=CI%2FCD%20Pipeline" alt="CI/CD Pipeline"/></a>
-    <a href="https://actions-badge.atrox.dev/ddc/ddcMacTahoeKde/goto?ref=master"><img src="https://img.shields.io/endpoint.svg?url=https%3A//actions-badge.atrox.dev/ddc/ddcMacTahoeKde/badge?ref=master&label=build&logo=github&style=plastic" alt="Build Status"/></a>
+    <a href="https://github.com/ddc/macOsTahoeKdeTheme/issues"><img src="https://img.shields.io/github/issues/ddc/macOsTahoeKdeTheme?style=plastic&logo=github&logoColor=white" alt="issues"/></a>
+    <a href="https://github.com/ddc/macOsTahoeKdeTheme/actions/workflows/workflow.yml"><img src="https://img.shields.io/github/actions/workflow/status/ddc/macOsTahoeKdeTheme/workflow.yml?style=plastic&logo=github&logoColor=white&label=CI%2FCD%20Pipeline" alt="CI/CD Pipeline"/></a>
+    <a href="https://actions-badge.atrox.dev/ddc/macOsTahoeKdeTheme/goto?ref=master"><img src="https://img.shields.io/endpoint.svg?url=https%3A//actions-badge.atrox.dev/ddc/macOsTahoeKdeTheme/badge?ref=master&label=build&logo=github&style=plastic" alt="Build Status"/></a>
 </p>
 
 <p align="center">A dark theme suite for <a href="https://kde.org/pt-br/plasma-desktop">KDE Plasma 6</a>, based on <a href="https://github.com/vinceliuice/MacTahoe-kde">MacTahoe KDE</a> and recolored to match <a href="https://github.com/KDE/breeze">Breeze Dark's palette</a>.</p>
@@ -52,17 +52,17 @@ This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice
 
 | Component          | Name                              |
 |--------------------|-----------------------------------|
-| Color Scheme       | ddcMacTahoeKdeDark                |
+| Color Scheme       | DDCmacOsTahoeKdeThemeDark                |
 | Application Style  | kvantum-dark                      |
-| Plasma Theme       | ddcMacTahoeKde-Dark               |
-| Window Decorations | ddcMacTahoeKde-Dark (Aurorae)     |
+| Plasma Theme       | DDCmacOsTahoeKdeTheme-Dark               |
+| Window Decorations | DDCmacOsTahoeKdeTheme-Dark (Aurorae)     |
 | Icons              | WhiteSur-dark                     |
 | Cursors            | MacTahoe                          |
 | System Sounds      | MacOS Sounds                      |
-| Splash Screen      | ddcMacTahoeKde-Dark               |
-| SDDM               | ddcMacTahoeKde-Dark               |
+| Splash Screen      | DDCmacOsTahoeKdeTheme-Dark               |
+| SDDM               | DDCmacOsTahoeKdeTheme-Dark               |
 | GTK Style          | MacTahoe-Dark-Darker              |
-| Kvantum Style      | ddcMacTahoeKdeDark                |
+| Kvantum Style      | DDCmacOsTahoeKdeThemeDark                |
 
 # Installation
 
@@ -134,7 +134,7 @@ A `userChrome.css` is included for dark-themed Thunderbird/Betterbird:
 # Project Structure
 
 ```
-ddcMacTahoeKde/
+DDCmacOsTahoeKdeTheme/
 ├── install.sh
 ├── uninstall.sh
 ├── plasma/
@@ -142,8 +142,8 @@ ddcMacTahoeKde/
 │   └── look-and-feel/         # Global theme packages
 ├── aurorae/themes/            # Window decorations (3 scale variants)
 ├── color-schemes/             # KDE color schemes
-├── kvantum/ddcMacTahoeKde/    # Kvantum theme configs + SVGs
-├── sddm/ddcMacTahoeKde-Dark/  # SDDM login theme
+├── kvantum/DDCmacOsTahoeKdeTheme/    # Kvantum theme configs + SVGs
+├── sddm/DDCmacOsTahoeKdeTheme-Dark/  # SDDM login theme
 ├── sounds/MacOS Sounds/       # System sound theme
 ├── gtk/colors.patch           # Breeze Dark color patch for GTK
 └── extras/                    # Thunderbird/Betterbird theme
