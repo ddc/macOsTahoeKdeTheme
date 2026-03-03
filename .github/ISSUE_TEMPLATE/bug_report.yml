@@ -1,58 +1,106 @@
 name: Bug Report
-description: Report broken or incorrect behaviour
+description: Report a visual glitch, broken component, or incorrect behavior in the theme
 labels: unconfirmed bug
 body:
   - type: markdown
     attributes:
       value: >
-        Thanks for taking the time to fill out a bug.
-        Please note that this form is for bugs only!
+        Thanks for taking the time to report a bug.
+        Please fill out the sections below so we can reproduce and fix the issue.
+
   - type: input
     attributes:
       label: Summary
-      description: A simple summary of your bug report
+      description: A brief one-line description of the problem.
     validations:
       required: true
-  - type: textarea
+
+  - type: dropdown
     attributes:
-      label: Reproduction Steps
-      description: >
-         What you did to make it happen.
+      multiple: true
+      label: Affected Component
+      description: Which part(s) of the theme are affected?
+      options:
+        - Global Theme (Look-and-Feel)
+        - Plasma Desktop Theme
+        - Color Scheme
+        - Window Decorations (Aurorae)
+        - Kvantum Style
+        - Icons (WhiteSur)
+        - Cursors (MacTahoe)
+        - System Sounds (MacOS Sounds)
+        - Splash Screen
+        - SDDM Login Theme
+        - GTK Style
+        - Extras (Thunderbird / Betterbird userChrome.css)
+        - Install / Uninstall Script
+        - Other
     validations:
       required: true
-  - type: textarea
+
+  - type: input
     attributes:
-      label: Minimal Reproducible Code
+      label: KDE Plasma Version
       description: >
-        A short snippet of code that showcases the bug.
-      render: python
-  - type: textarea
-    attributes:
-      label: Expected Results
-      description: >
-        What did you expect to happen?
+        Run `plasmashell --version` in a terminal and paste the output here.
+      placeholder: "e.g. 6.3.4"
     validations:
       required: true
-  - type: textarea
+
+  - type: input
     attributes:
-      label: Actual Results
-      description: >
-        What actually happened?
+      label: Distro / OS
+      description: Your Linux distribution and version.
+      placeholder: "e.g. Fedora 43, Arch, Ubuntu 25.04"
     validations:
       required: true
+
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to see or happen?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: What actually happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: >
+        How can we reproduce the issue? Include any relevant settings or steps.
+      placeholder: |
+        1. Install the theme using `./install.sh`
+        2. Apply the global theme from System Settings
+        3. Open ...
+        4. See ...
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: >
+        If applicable, attach screenshots showing the issue. Drag and drop images here.
+    validations:
+      required: false
+
   - type: checkboxes
     attributes:
       label: Checklist
-      description: >
-        Let's make sure you've properly done due diligence when reporting this issue!
+      description: Please confirm the following before submitting.
       options:
         - label: I have searched the open issues for duplicates.
           required: true
-        - label: I have shown the entire traceback, if possible.
-          required: true
-        - label: I have removed my token from display, if visible.
-          required: true
+
   - type: textarea
     attributes:
       label: Additional Context
-      description: If there is anything else to say, please do so here.
+      description: >
+        Any other relevant information (e.g. multi-monitor setup, display scaling,
+        Wayland vs X11, Kvantum version, etc.).

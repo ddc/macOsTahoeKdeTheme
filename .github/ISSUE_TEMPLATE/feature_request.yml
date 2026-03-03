@@ -1,47 +1,64 @@
 name: Feature Request
-description: Suggest a feature for this library
+description: Suggest a change or addition to the theme
 labels: feature request
 body:
+  - type: markdown
+    attributes:
+      value: >
+        Have an idea to improve the theme? We'd love to hear it.
+        Please describe what you'd like to see changed or added.
+
   - type: input
     attributes:
       label: Summary
-      description: >
-        A short summary of what your feature request is.
+      description: A brief one-line summary of the feature or improvement.
     validations:
       required: true
+
   - type: dropdown
     attributes:
-      multiple: false
-      label: What is the feature request for?
+      multiple: true
+      label: Related Component
+      description: Which part(s) of the theme does this relate to?
       options:
-        - The core library
-        - The documentation
+        - Global Theme (Look-and-Feel)
+        - Plasma Desktop Theme
+        - Color Scheme
+        - Window Decorations (Aurorae)
+        - Kvantum Style
+        - Icons (WhiteSur)
+        - Cursors (MacTahoe)
+        - System Sounds (MacOS Sounds)
+        - Splash Screen
+        - SDDM Login Theme
+        - GTK Style
+        - Extras (Thunderbird / Betterbird userChrome.css)
+        - Install / Uninstall Script
+        - New Component
+        - Other
     validations:
       required: true
+
   - type: textarea
     attributes:
-      label: The Problem
+      label: Description
       description: >
-        What problem is your feature trying to solve?
-        What becomes easier or possible when this feature is implemented?
+        Describe the change or addition you'd like and why it would be useful.
     validations:
       required: true
+
   - type: textarea
     attributes:
-      label: The Ideal Solution
+      label: Screenshots / Examples
       description: >
-        What is your ideal solution to the problem?
-        What would you like this feature to do?
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: The Current Solution
-      description: >
-        What is the current solution to the problem, if any?
+        If applicable, include screenshots, mockups, or links to examples of what
+        you have in mind. Drag and drop images here.
     validations:
       required: false
+
   - type: textarea
     attributes:
       label: Additional Context
-      description: If there is anything else to say, please do so here.
+      description: >
+        Any other relevant details (e.g. related themes, upstream references,
+        alternative approaches you've considered, etc.).
