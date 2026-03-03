@@ -2,28 +2,24 @@
 <!-- Brief description of what this PR does and why -->
 
 ## Changes Made
-<!-- List the key changes -->
+<!-- List the key changes, e.g. which SVGs, color values, configs, or scripts were modified -->
 
 ## Type of Change
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Breaking change (existing functionality affected)
-- [ ] Refactoring (no functional changes)
+- [ ] Bug fix (visual glitch, incorrect color, broken component)
+- [ ] New feature (new component, new variant, additional asset)
+- [ ] Color / style adjustment
+- [ ] Install / uninstall script change
+- [ ] Upstream sync (updated assets from upstream theme repos)
 - [ ] Documentation
 - [ ] CI/CD or build configuration
-- [ ] Dependencies update
 
 ## Testing
-- [ ] Unit tests added/updated
-- [ ] Integration tests added/updated
-- [ ] All existing tests pass
-- [ ] Manual testing performed
-
-## Checklist
-- [ ] Code follows the project's style and conventions
-- [ ] Documentation updated (if applicable)
-- [ ] No new warnings or linter errors introduced
-- [ ] I have considered how this change may affect other services
+- [ ] Installed the theme using `./install.sh`
+- [ ] Applied the global theme from System Settings
+- [ ] Verified appearance of affected component(s)
+- [ ] Checked with Kvantum Manager (if Kvantum style was changed)
+- [ ] Tested uninstall with `./uninstall.sh` (if install/uninstall scripts were changed)
+- [ ] Tested on Wayland and/or X11
 
 ## Reviewer
 - [ ] I understand that by approving this PR, I share responsibility for these changes
