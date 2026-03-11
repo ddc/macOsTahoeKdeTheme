@@ -243,8 +243,8 @@ if $APPLY_THEME; then
 
     # Set icons and cursor
     kwriteconfig6 --file kdeglobals --group Icons --key Theme "DDCmacOsTahoeKdeTheme-icons-dark"
-    kwriteconfig6 --file kcminputrc --group Mouse --key cursorTheme "DDCmacOsTahoe-cursor-mixed"
-    kwriteconfig6 --file kcminputrc --group Mouse --key cursorSize "30"
+    kwriteconfig6 --file kcminputrc --group Mouse --key cursorTheme "DDCmacOsTahoe-cursor-dark"
+    kwriteconfig6 --file kcminputrc --group Mouse --key cursorSize "32"
 
     # Set application style
     kwriteconfig6 --file kdeglobals --group KDE --key widgetStyle "kvantum-dark"

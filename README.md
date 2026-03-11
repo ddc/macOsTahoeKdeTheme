@@ -62,8 +62,8 @@ modifications:
 | Plasma Theme       | DDCmacOsTahoeKdeTheme-dark           |
 | Window Decorations | DDCmacOsTahoeKdeTheme-dark (Aurorae) |
 | Icons              | DDCmacOsTahoeKdeTheme-icons-dark     |
-| Cursors (default)  | DDCmacOsTahoe-cursor-mixed           |
-| Cursors            | DDCmacOsTahoe-cursor-dark            |
+| Cursors (default)  | DDCmacOsTahoe-cursor-dark            |
+| Cursors            | DDCmacOsTahoe-cursor-mixed           |
 | Cursors            | DDCmacOsTahoe-cursor-white           |
 | Cursors            | DDCmacOsMonterey-cursor-white        |
 | System Sounds      | DDCmacOsKdeTheme-sounds         |
@@ -179,13 +179,13 @@ macOsTahoeKdeTheme/
 ├── cursors/                             # Cursor themes
 │   ├── DDCmacOsTahoe-cursor-dark/
 │   ├── DDCmacOsTahoe-cursor-white/
-│   ├── DDCmacOsTahoe-cursor-mixed/      # Default cursor theme
+│   ├── DDCmacOsTahoe-cursor-dark/       # Default cursor theme
 │   └── DDCmacOsMonterey-cursor-white/
 ├── gtk/themes/                          # GTK theme
 │   └── DDCmacOsTahoeKdeTheme-dark/
 ├── scripts/                             # Helper scripts
-│   ├── add_cursor_sizes.py              # Adds 36px/40px cursor sizes
-│   └── bump_version.sh                  # Version bump utility
+│   └── add_cursor_sizes.py              # Adds 36px/40px cursor sizes
+├── bump_version.sh                      # Version bump utility
 └── extras/                              # Thunderbird/Betterbird theme
 ```
 

@@ -1,6 +1,6 @@
 [kcminputrc][Mouse]
-cursorTheme=DDCmacOsTahoe-cursor-mixed
-cursorSize=30
+cursorTheme=DDCmacOsTahoe-cursor-dark
+cursorSize=32
 
 [kdeglobals][General]
 ColorScheme=DDCmacOsTahoeKdeTheme-dark

@@ -1,12 +1,11 @@
 #!/bin/bash
 # Reads the version from the VERSION file and updates all metadata files to match.
 #
-# Usage: Edit VERSION, then run ./scripts/bump_version.sh
+# Usage: Edit VERSION, then run ./bump_version.sh
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 NEW_VERSION="$(cat "$ROOT_DIR/VERSION")"
 
