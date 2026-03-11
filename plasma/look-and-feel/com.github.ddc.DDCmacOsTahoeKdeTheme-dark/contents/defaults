@@ -28,7 +28,7 @@ library=org.kde.kwin.aurorae.v2
 theme=__aurorae__svg__DDCmacOsTahoeKdeTheme-dark
 
 [kdeglobals][Sounds]
-Theme=DDCmacOsTahoeKdeTheme-sounds
+Theme=DDCmacOsKdeTheme-sounds
 
 [plasmarc][Theme]
 name=DDCmacOsTahoeKdeTheme-dark

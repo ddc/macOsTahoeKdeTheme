@@ -103,7 +103,7 @@ link.visited.color=#452886
 progress.indicator.text.color=#ffffff
 
 [Hacks]
-transparent_ktitle_label=true
+transparent_ktitle_label=false
 transparent_dolphin_view=false
 transparent_pcmanfm_sidepane=true
 blur_translucent=false

@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" width="24" height="24">
-  <defs>
-    <style type="text/css" id="current-color-scheme">.ColorScheme-Text { color: #fcfcfc; } </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs id="defs3051">
+    <style type="text/css" id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#dedede;
+      }
+      .ColorScheme-NegativeText {
+        color:#da4453;
+      }
+      </style>
   </defs>
-  <g transform="translate(1,1)">
-    <g class="ColorScheme-Text" stroke-linecap="square">
-      <path d="m6 6 10 10m-10 0 10-10" fill="currentColor"/>
-      <path d="M 6,5.1523437 5.1523437,6 10.152344,11 5.1523437,16 6,16.847656 l 5,-5 5,5 L 16.847656,16 l -5,-5 5,-5 L 16,5.1523437 11,10.152344 Z" fill="currentColor"/>
-    </g>
-  </g>
+  <path
+     style="fill:currentColor;fill-opacity:1;stroke:none" 
+     d="M 12 4 A 8 8.00001 0 0 0 4 12 A 8 8.00001 0 0 0 12 20 A 8 8.00001 0 0 0 20 12 A 8 8.00001 0 0 0 12 4 z M 8.7070312 8 L 12 11.292969 L 15.292969 8 L 16 8.7070312 L 12.707031 12 L 16 15.292969 L 15.292969 16 L 12 12.707031 L 8.7070312 16 L 8 15.292969 L 11.292969 12 L 8 8.7070312 L 8.7070312 8 z "
+     class="ColorScheme-NegativeText"
+     />
 </svg>

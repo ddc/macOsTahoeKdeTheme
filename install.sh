@@ -143,9 +143,9 @@ ok "Kvantum theme installed"
 SOUNDS_DIR="$HOME/.local/share/sounds"
 mkdir -p "$SOUNDS_DIR"
 
-info "Installing sound theme: DDCmacOsTahoeKdeTheme-sounds..."
-cp -a "$SCRIPT_DIR/sounds/DDCmacOsTahoeKdeTheme-sounds" "$SOUNDS_DIR/"
-ok "DDCmacOsTahoeKdeTheme-sounds installed"
+info "Installing sound theme: DDCmacOsKdeTheme-sounds..."
+cp -a "$SCRIPT_DIR/sounds/DDCmacOsKdeTheme-sounds" "$SOUNDS_DIR/"
+ok "DDCmacOsKdeTheme-sounds installed"
 
 # -------------------------------------------------------------------
 # Step 8: Install bundled icons and cursors
@@ -249,7 +249,7 @@ if $APPLY_THEME; then
     kwriteconfig6 --file kdeglobals --group KDE --key widgetStyle "kvantum-dark"
 
     # Set sound theme
-    kwriteconfig6 --file kdeglobals --group Sounds --key Theme "DDCmacOsTahoeKdeTheme-sounds"
+    kwriteconfig6 --file kdeglobals --group Sounds --key Theme "DDCmacOsKdeTheme-sounds"
 
     # Set GTK theme
     if $INSTALL_GTK; then

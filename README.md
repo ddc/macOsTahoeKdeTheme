@@ -10,7 +10,7 @@
     <a href="https://ko-fi.com/ddcsta"><img src="https://img.shields.io/badge/Ko--fi-ddcsta-FF5E5B?style=plastic&logo=kofi&logoColor=white&color=brightgreen" alt="Ko-fi"/></a>
     <a href="https://www.paypal.com/ncp/payment/6G9Z78QHUD4RJ"><img src="https://img.shields.io/badge/Donate-PayPal-brightgreen.svg?style=plastic&logo=paypal&logoColor=white" alt="Donate"/></a>
     <br>
-    <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic&logo=gnu&logoColor=white" alt="License: GPLv3"/></a>
+    <a href="https://github.com/ddc/macOsTahoeKdeTheme/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic&logo=gnu&logoColor=white" alt="License: GPLv3"/></a>
     <a href="https://github.com/ddc/macOsTahoeKdeTheme/releases/latest"><img src="https://img.shields.io/github/v/release/ddc/macOsTahoeKdeTheme?style=plastic&logo=github&logoColor=white" alt="Release"/></a>
     <br>
     <a href="https://github.com/ddc/macOsTahoeKdeTheme/issues"><img src="https://img.shields.io/github/issues/ddc/macOsTahoeKdeTheme?style=plastic&logo=github&logoColor=white" alt="issues"/></a>
@@ -39,11 +39,13 @@
 
 # What's Changed
 
-This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice/MacTahoe-kde) and applies the following modifications:
+This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice/MacTahoe-kde) and applies the following
+modifications:
 
 - **Plasma desktop theme SVGs** — replaced with Breeze Dark originals for consistent panel/widget styling
 - **Kvantum colors
-  ** — dark variant recolored from warm grays (#1f1f1f, #282828, #333333) to Breeze Dark's cool blue-grays (#141618, #202326, #292c30)
+  ** — dark variant recolored from warm grays (#1f1f1f, #282828, #333333) to Breeze Dark's cool blue-grays (#141618,
+  #202326, #292c30)
 - **KDE color scheme** — selection/highlight colors corrected
 - **Inactive window behavior** — fixed (no dimming, blur on all windows)
 - **Tab alignment** — left-aligned tabs in Konsole, Kate, and other apps (Kvantum `left_tabs=true`)
@@ -64,8 +66,7 @@ This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice
 | Cursors            | DDCmacOsTahoe-cursor-dark            |
 | Cursors            | DDCmacOsTahoe-cursor-white           |
 | Cursors            | DDCmacOsMonterey-cursor-white        |
-| System Sounds      | DDCmacOsTahoeKdeTheme-sounds         |
-| Splash Screen      | DDCmacOsTahoeKdeTheme-dark           |
+| System Sounds      | DDCmacOsKdeTheme-sounds         |
 | GTK Style          | DDCmacOsTahoeKdeTheme-dark           |
 | Kvantum Style      | DDCmacOsTahoeKdeTheme-dark           |
 
@@ -77,7 +78,7 @@ This project takes [vinceliuice's MacTahoe theme](https://github.com/vinceliuice
 | Look-and-Feel        | `~/.local/share/plasma/look-and-feel/com.github.ddc.DDCmacOsTahoeKdeTheme-dark/` |
 | Aurorae Decorations  | `~/.local/share/aurorae/themes/DDCmacOsTahoeKdeTheme-dark{,-1.25x,-1.5x}/`       |
 | Color Scheme         | `~/.local/share/color-schemes/DDCmacOsTahoeKdeTheme-dark.colors`                 |
-| Sound Theme          | `~/.local/share/sounds/DDCmacOsTahoeKdeTheme-sounds/`                            |
+| Sound Theme          | `~/.local/share/sounds/DDCmacOsKdeTheme-sounds/`                            |
 | Icon Theme           | `~/.local/share/icons/DDCmacOsTahoeKdeTheme-icons-dark/`                         |
 | Cursor Themes        | `~/.local/share/icons/DDCmacOsTahoe-cursor-{dark,white,mixed}/`                  |
 | Cursor Theme         | `~/.local/share/icons/DDCmacOsMonterey-cursor-white/`                            |
@@ -134,7 +135,7 @@ sudo pacman -S --noconfirm kvantum
 # What the Installer Does
 
 1. Copies Plasma desktop theme, look-and-feel package, Aurorae window decorations, color scheme, and Kvantum theme to their proper locations
-2. Copies the DDCmacOsTahoeKdeTheme-sounds theme
+2. Copies the DDCmacOsKdeTheme-sounds theme
 3. Installs the bundled icon theme (DDCmacOsTahoeKdeTheme-icons-dark)
 4. Installs four bundled cursor themes (DDCmacOsTahoe-cursor-dark, DDCmacOsTahoe-cursor-white, DDCmacOsTahoe-cursor-mixed, DDCmacOsMonterey-cursor-white) and converts text aliases to symlinks
 5. Installs the bundled GTK theme (DDCmacOsTahoeKdeTheme-dark)
@@ -154,27 +155,39 @@ A `userChrome.css` is included for dark-themed Thunderbird/Betterbird:
 # Project Structure
 
 ```
-DDCmacOsTahoeKdeTheme/
-├── install.sh
-├── uninstall.sh
+macOsTahoeKdeTheme/
+├── install.sh                           # Theme installer
+├── uninstall.sh                         # Theme uninstaller
+├── VERSION                              # Version file
 ├── plasma/
-│   ├── desktoptheme/                # Patched Plasma SVGs
-│   └── look-and-feel/               # Global theme packages
-├── aurorae/themes/                  # Window decorations (3 scale variants)
-├── color-schemes/                   # KDE color schemes
-├── kvantum/DDCmacOsTahoeKdeTheme-dark/ # Kvantum theme configs + SVGs
-├── sounds/DDCmacOsTahoeKdeTheme-sounds/ # System sound theme
-├── icons/DDCmacOsTahoeKdeTheme-icons-dark/ # Icon theme
-├── cursors/                         # Cursor themes
+│   ├── desktoptheme/                    # Patched Plasma SVGs
+│   │   └── DDCmacOsTahoeKdeTheme-dark/
+│   └── look-and-feel/                   # Global theme package
+│       └── com.github.ddc.DDCmacOsTahoeKdeTheme-dark/
+├── aurorae/themes/                      # Window decorations (3 scale variants)
+│   ├── DDCmacOsTahoeKdeTheme-dark/
+│   ├── DDCmacOsTahoeKdeTheme-dark-1.25x/
+│   └── DDCmacOsTahoeKdeTheme-dark-1.5x/
+├── color-schemes/                       # KDE color scheme
+│   └── DDCmacOsTahoeKdeTheme-dark.colors
+├── kvantum/                             # Kvantum theme configs + SVGs
+│   └── DDCmacOsTahoeKdeTheme-dark/
+├── sounds/                              # System sound theme
+│   └── DDCmacOsKdeTheme-sounds/
+├── icons/                               # Icon theme
+│   └── DDCmacOsTahoeKdeTheme-icons-dark/
+├── cursors/                             # Cursor themes
 │   ├── DDCmacOsTahoe-cursor-dark/
 │   ├── DDCmacOsTahoe-cursor-white/
-│   ├── DDCmacOsTahoe-cursor-mixed/  # Default cursor theme
+│   ├── DDCmacOsTahoe-cursor-mixed/      # Default cursor theme
 │   └── DDCmacOsMonterey-cursor-white/
-├── gtk/themes/DDCmacOsTahoeKdeTheme-dark/ # GTK theme
-├── scripts/                         # Helper scripts
-│   ├── add_cursor_sizes.py          # Adds 36px/40px cursor sizes
-│   └── bump_version.sh              # Version bump utility
-└── extras/                          # Thunderbird/Betterbird theme
+├── gtk/themes/                          # GTK theme
+│   └── DDCmacOsTahoeKdeTheme-dark/
+├── scripts/                             # Helper scripts
+│   ├── add_cursor_sizes.py              # Adds 36px/40px cursor sizes
+│   ├── bump_version.sh                  # Version bump utility
+│   └── update_icons.sh                  # Updates icons from upstream
+└── extras/                              # Thunderbird/Betterbird theme
 ```
 
 # Credits
@@ -189,9 +202,10 @@ This project is a color-corrected fork of themes by [vinceliuice](https://github
 
 # License
 
-GPLv3, same as the original MacTahoe themes.
+Released under the [GPLv3](https://github.com/ddc/macOsTahoeKdeTheme/blob/master/LICENSE)
 
 # Support
+
 If you find this project helpful, consider supporting development:
 
 - [GitHub Sponsor](https://github.com/sponsors/ddc)

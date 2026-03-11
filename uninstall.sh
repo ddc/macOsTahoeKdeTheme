@@ -67,8 +67,8 @@ ok "Kvantum theme removed"
 # -------------------------------------------------------------------
 # Remove sound theme
 # -------------------------------------------------------------------
-info "Removing DDCmacOsTahoeKdeTheme-sounds..."
-rm -rf "$HOME/.local/share/sounds/DDCmacOsTahoeKdeTheme-sounds"
+info "Removing DDCmacOsKdeTheme-sounds..."
+rm -rf "$HOME/.local/share/sounds/DDCmacOsKdeTheme-sounds"
 ok "Sound theme removed"
 
 # -------------------------------------------------------------------

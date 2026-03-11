@@ -30,4 +30,5 @@ while IFS= read -r -d '' file; do
     echo "  Updated ${file#"$ROOT_DIR/"}"
 done < <(find "$ROOT_DIR" -name "metadata.desktop" -print0)
 
+echo ""
 echo "Done. All metadata files updated to $NEW_VERSION"
