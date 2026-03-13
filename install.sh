@@ -226,6 +226,9 @@ if $APPLY_THEME; then
     plasma-apply-desktoptheme DDCmacOsTahoe-dark
     kvantummanager --set DDCmacOsTahoe-dark
 
+    # Force color scheme in config (plasma-apply-colorscheme may not persist across login)
+    kwriteconfig6 --file kdeglobals --group General --key ColorScheme "DDCmacOsTahoe-dark"
+
     # Set Aurorae decoration
     kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key library "org.kde.kwin.aurorae.v2"
     kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key theme "__aurorae__svg__DDCmacOsTahoe-dark"
